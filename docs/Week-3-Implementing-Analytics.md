@@ -20,6 +20,8 @@ These statistics should have:
 As you add more functionality to the application, testing becomes much harder. Write a detailed plan on how you are testing all of this functionality.
 
 Hint: think about how to write scripts that generate fake data to add to the database.
+Response: 
+To test functionality initially, I used SQLite in terminal to create fake users and manually input them into the database. After populating the database I tested the views the same way as the previous assignment (accessing the pages from the user side and seeing if they function correctly). However, this startegy is not as feasible for testing the applications on large volumes of data. To do this I would write a script with a list of names, user ids, etc and a loop that will generate unique users by selecting a value from each list, putting it into a tuple, and appending to a list of these users. Then I would loop through this list and add all of these users into the database. 
 
 ## Step 4. Implement (Step 3)
 Implement Step 3 in code and include the results with your submitted pull request. 
